@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css?123" type="text/css" />
+    <script src="app.js?123"></script>
+    <script src="https://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
+</head>
+<body>
+    <div class="infobar flex-parent border">
+        <div class="infobar__username cell">
+            Username
+        </div>
+        <div class="infobar__score cell">
+            Очки:
+            <span class="infobar__score-value" id="scoreIndicator">0</span>
+        </div>
+        <div class="infobar__money cell">
+            Монеты:
+            <span class="infobar__money-value">0</span>
+        </div>
+    </div>
+    <div id="game">
+        <div id="block"></div>
+        <div id="damage"></div>
+        <div id="pickaxe"></div>
+    </div>
+    <script type="text/javascript">
+        VK.init(function () {
+            // API initialization succeeded
+            // Your code here
+            console.log("good");
+        }, function () {
+            // API initialization failed
+            // Can reload page here
+            console.log("bad");
+        }, '5.103');
+    </script>
+</body>
+</html>
